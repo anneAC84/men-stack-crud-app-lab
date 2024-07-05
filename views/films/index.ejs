@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Films Index</title>
+  </head>
+  <body>
+    <h1>All Films</h1>
+    <ul>
+        <% films.forEach(films => { %>
+          <li><%= films.name %></li>
+        <% }); %>
+      </ul>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Films</title>
+  </head>
+  <body>
+    <h1>Create a New Film!</h1>
+    <!-- views/fruits/new.ejs -->
+    <form action="/films" method="POST">
+      <label for="nameOfFilm">Name of Film:</label>
+      <input type="text" name="nameOfFilm" id="nameOfFilm" />
+  
+      <label for="leadActor">Lead Actor</label>
+      <input type="text" name="leadActor" id="leadActor" />
+  
+      <button type="submit">Post Films</button>
+    </form>
+
+  </body>
+</html>
