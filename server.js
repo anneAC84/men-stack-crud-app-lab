@@ -32,7 +32,7 @@ app.post('/films', async (req, res) => {
 
    const createFilms = await Films.create(req.body);
     console.log(createFilms);
-    res.redirect("/films/new");
+    res.redirect("/films");
   });
 
   // GET /films
