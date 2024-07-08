@@ -1,0 +1,15 @@
+<body>
+    <!-- update the header -->
+    <h1>Edit <%= films.nameOfFilm %></h1>
+    <form action='/films/<%=films._id%>?_method=PUT' method="POST">
+      <label for="nameOfFilm">Name Of Film:</label>
+      <input type="text" nameOfFilm="nameOfFilm" value="<%= films.nameOfFilm%>" />
+  
+      <label for="leadActor">Who is the Lead Actor?</label>
+      <input type="text" name="leadActor" value="<%=films.leadActor%>" />
+      <!-- update the button text -->
+      <button type="submit">Update Films</button>
+    </form>
+    <a href="/films">Back to Films</a>
+  </body>
+  

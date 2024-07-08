@@ -9,14 +9,25 @@
     <title>Films Index</title>
   </head>
   <body>
-    <h1>All Films</h1>
+    <h1>Film and Actor Index</h1>
     
-<a href="/films/new">Add New Film</a>
 
+<h2>Films</h2>
     <ul>
         <% films.forEach(films => { %>
-          <li><%= films.nameOfFilm %></li>
+          <li><a href='/films/<%= films._id %>'><%= films.nameOfFilm %></a>
+        </li>
         <% }); %>
       </ul>
+
+      <h3>Leading Actor</h3>
+
+      <ul>
+        <% films.forEach(films => { %>
+            <li><a href='/films/<%= films._id %>'><%= films.leadActor %></a>
+        </li>
+        <% }); %>
+      </ul>
+      <a href="/films/new">Add New Film and Actor</a>
   </body>
 </html>

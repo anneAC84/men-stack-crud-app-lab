@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= films.nameOfFilm %></title><!--Dynamic title based on film name -->
+  </head>
+  <body>
+    <h1><%= films.nameOfFilm %></h1> <!-- Display film name -->
+  <!-- Add more details about the film here -->
+<form action='/films/<%=films._id%>?_method=DELETE'method='POST'>
+<button type='submit'>Delete <%= films.nameOfFilm %></button>
+</form>
+<a href="/films/<%= films._id %>/edit">Edit <%= films.nameOfFilm %></a>
+<a href="/films/">Back to films</a>
+    </body>
+</html>
